@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:weightSum="1"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PEBBLE  APP"
+        android:id="@+id/TextView1"
+        android:layout_gravity="center"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_marginTop="160dp"
+        android:password="false"
+        android:phoneNumber="false"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="START APP"
+            android:id="@+id/buttonS"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="STOP APP"
+        android:id="@+id/buttonC"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TEST CONNEXION"
+        android:id="@+id/buttonConn"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"/>
+
+</LinearLayout>

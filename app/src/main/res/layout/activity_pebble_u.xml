@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:weightSum="1"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use your Pebble"
+        android:id="@+id/TextView1"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_marginTop="180dp"
+        android:layout_gravity="center_horizontal"
+        android:password="false"
+        android:phoneNumber="false"
+        android:singleLine="false"
+        android:theme="@style/TextAppearance.AppCompat.Headline" />
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:text="CLOSE WATCHAPP"
+        android:id="@+id/button"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="RATHER USE ANDROID APP"
+        android:id="@+id/button2"
+        android:textStyle="bold" />
+
+</LinearLayout>

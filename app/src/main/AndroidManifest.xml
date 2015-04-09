@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="swatchon.swatchon" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Swatch On"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="SWATCH ON"
+            android:logo="@drawable/ic_launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <provider
+                android:name=".DictionaryProvider"
+                android:authorities="com.getpebble.android.provider"/>
+        </activity>
+
+        <activity
+            android:name=".MainActivity2"
+            android:label="SWATCH ON"
+            android:logo="@drawable/ic_launcher">
+        </activity>
+        <activity
+            android:name=".Pebble"
+            android:label="PEBBLE SETTINGS"
+            android:logo="@drawable/ic_launcher">
+        </activity>
+        <activity
+            android:name=".MainActivity1"
+            android:label="SWATCH ON"
+            android:logo="@drawable/ic_launcher">
+        </activity>
+        <activity
+            android:name=".PebbleU"
+            android:label="@string/title_activity_pebble_u"
+            android:logo="@drawable/ic_launcher">
+        </activity>
+        <activity
+            android:theme="@style/Theme.AppCompat.Light"
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:logo="@drawable/ic_launcher">
+        </activity>
+    </application>
+
+</manifest>
